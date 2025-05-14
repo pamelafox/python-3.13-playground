@@ -1,13 +1,8 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
 // https://github.com/microsoft/vscode-dev-containers/tree/v0.245.0/containers/python-3
 {
-	"name": "Python 3",
-	"forwardPorts": [8000],
-	"build": {
-		"dockerfile": "Dockerfile",
-		"context": ".."
-	},
-
+	"name": "Python 3.13",
+	"image": "mcr.microsoft.com/devcontainers/python:3.13-bullseye",
 	// Configure tool-specific properties.
 	"customizations": {
 		// Configure properties specific to VS Code.
@@ -21,7 +16,8 @@
 			// Add the IDs of extensions you want installed when the container is created.
 			"extensions": [
 				"ms-python.python",
-				"ms-python.vscode-pylance"
+				"ms-python.vscode-pylance",
+				"ms-python.vscode-python-envs"
 			]
 		}
 	},
